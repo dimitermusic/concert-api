@@ -9,6 +9,7 @@ const PORT = process.env.PORT || 4747;
 app.use(cors());
 app.use((req, res, next) => {
     res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader("Access-Control-Allow-Methods", "GET");
     next();
 });
 app.use(express.urlencoded({ extended: true }));
