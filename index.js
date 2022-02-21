@@ -10,12 +10,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
 app.use(routes)
-app.use(cors({
-    origin: '*'
-}));
+app.use(cors());
 
 sequelize.sync({ force: false }).then(function () {
     app.listen(PORT, function () {
-        console.log('Listening at http://localhost:' + PORT);
+        console.log('Listening at' + PORT);
     })
 })
