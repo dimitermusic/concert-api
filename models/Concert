@@ -22,9 +22,13 @@ Concert.init({
     },
     time: {
         type: DataTypes.STRING(1234),
-        allowNull: false
+        allowNull: true
     },
     ticketLink: {
+        type: DataTypes.STRING(1234),
+        allowNull: true
+    },
+    bandsInTownLink: {
         type: DataTypes.STRING(1234),
         allowNull: true
     }
