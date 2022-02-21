@@ -1,7 +1,7 @@
 # Dimiter's Concert API [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Description
-A simple API that allows me to practice building RESTful APIs from scratch while also storing valuable data!
+A simple API built with a Node.js/Express.js server and MySQL database that is used to manage my concerts!
 
 ## Table of Contents
 - [Dimiter's Concert API ![License](https://opensource.org/licenses/Apache-2.0)](#dimiters-concert-api-)
