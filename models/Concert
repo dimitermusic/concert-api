@@ -27,10 +27,6 @@ Concert.init({
     ticketLink: {
         type: DataTypes.STRING(1234),
         allowNull: true
-    },
-    price: {
-        type: DataTypes.INTEGER,
-        allowNull: true
     }
 }, {
     sequelize
