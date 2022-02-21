@@ -20,7 +20,11 @@ router.get("/:id", (req, res) => {
     }
   })
     .then(concertData => {
-      res.json(concertData)
+      if (concertData) {
+        res.json(concertData);
+      } else {
+        res.status(404).json({ err: "no such concert found!" });
+      }
     }).catch(err => {
       console.log(err);
     })
@@ -28,9 +32,12 @@ router.get("/:id", (req, res) => {
 
 router.post("/", (req, res) => {
   Concert.create({
+    eventName: req.body.eventName,
     city: req.body.city,
     venue: req.body.venue,
     date: req.body.date,
+    time: req.body.time,
+    ticketLink: req.body.ticketLink,
     price: req.body.price
   }).then(newConcert => {
     res.json(newConcert);
@@ -44,9 +51,12 @@ router.post("/", (req, res) => {
 router.put("/:id", (req, res) => {
   Concert.update(
     {
+      eventName: req.body.eventName,
       city: req.body.city,
       venue: req.body.venue,
       date: req.body.date,
+      time: req.body.time,
+      ticketLink: req.body.ticketLink,
       price: req.body.price
     },
     {
@@ -55,7 +65,11 @@ router.put("/:id", (req, res) => {
       }
     })
     .then(updatedConcert => {
-      res.json(updatedConcert);
+      if (updatedConcert) {
+        res.json(updatedConcert);
+      } else {
+        res.status(404).json({ err: "no such concert found!" });
+      }
     })
     .catch(err => {
       console.log(err);
@@ -69,9 +83,9 @@ router.delete("/:id", (req, res) => {
       id: req.params.id
     }
   })
-    .then(delComment => {
-      if (delComment) {
-        res.json(delComment);
+    .then(deletedConcert => {
+      if (deletedConcert) {
+        res.json(deletedConcert);
       } else {
         res.status(404).json({ err: "no such concert found!" });
       }

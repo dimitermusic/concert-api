@@ -4,6 +4,10 @@ const sequelize = require('../config/connection');
 class Concert extends Model { }
 
 Concert.init({
+    eventName: {
+        type: DataTypes.STRING(1234),
+        allowNull: false
+    },
     city: {
         type: DataTypes.STRING(1234),
         allowNull: false
@@ -15,6 +19,14 @@ Concert.init({
     date: {
         type: DataTypes.STRING(1234),
         allowNull: false
+    },
+    time: {
+        type: DataTypes.STRING(1234),
+        allowNull: false
+    },
+    ticketLink: {
+        type: DataTypes.STRING(1234),
+        allowNull: true
     },
     price: {
         type: DataTypes.INTEGER,
