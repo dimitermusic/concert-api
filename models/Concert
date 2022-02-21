@@ -1,0 +1,27 @@
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/connection');
+
+class Concert extends Model { }
+
+Concert.init({
+    city: {
+        type: DataTypes.STRING(1234),
+        allowNull: false
+    },
+    venue: {
+        type: DataTypes.STRING(1234),
+        allowNull: false
+    },
+    date: {
+        type: DataTypes.DATEONLY,
+        allowNull: false
+    },
+    price: {
+        type: DataTypes.INTEGER,
+        allowNull: true
+    }
+}, {
+    sequelize
+})
+
+module.exports = Concert;

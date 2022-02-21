@@ -1,0 +1,25 @@
+{
+  "name": "concert-api",
+  "version": "1.0.0",
+  "description": "A simple API that allows me to practice building RESTful APIs from scratch while also storing valuable data!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimitermusic/concert-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimitermusic/concert-api/issues"
+  },
+  "homepage": "https://github.com/dimitermusic/concert-api#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "sequelize": "^6.16.2"
+  }
+}
