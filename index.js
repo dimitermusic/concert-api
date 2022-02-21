@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.static('public'));
 app.use(routes)
 
-sequelize.sync({ force: false }).then(function () {
+sequelize.sync({ force: true }).then(function () {
     app.listen(PORT, function () {
         console.log('Listening at http://localhost:' + PORT);
     })
