@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Concert = require("../../models");
+const Concert = require("../../models/Concert");
 
 router.get("/", (req, res) => {
   Concert.findAll()
@@ -10,7 +10,7 @@ router.get("/", (req, res) => {
     .catch(err => {
       console.log(err);
       res.status(500).json({ err });
-    });
+    }); s
 });
 
 router.get("/:id", (req, res) => {
