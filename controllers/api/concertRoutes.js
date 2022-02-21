@@ -10,13 +10,13 @@ router.get("/", (req, res) => {
     .catch(err => {
       console.log(err);
       res.status(500).json({ err });
-    }); s
+    });
 });
 
 router.get("/:id", (req, res) => {
   Concert.findOne({
     where: {
-      ConcertId: req.params.id
+      id: req.params.id
     }
   })
     .then(concertData => {
@@ -42,7 +42,7 @@ router.post("/", (req, res) => {
 });
 
 router.put("/:id", (req, res) => {
-  Comment.update(
+  Concert.update(
     {
       city: req.body.city,
       venue: req.body.venue,
@@ -51,7 +51,7 @@ router.put("/:id", (req, res) => {
     },
     {
       where: {
-        ConcertId: req.params.id
+        id: req.params.id
       }
     })
     .then(updatedConcert => {
@@ -66,7 +66,7 @@ router.put("/:id", (req, res) => {
 router.delete("/:id", (req, res) => {
   Concert.destroy({
     where: {
-      ConcertId: req.params.id
+      id: req.params.id
     }
   })
     .then(delComment => {

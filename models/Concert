@@ -13,7 +13,7 @@ Concert.init({
         allowNull: false
     },
     date: {
-        type: DataTypes.DATEONLY,
+        type: DataTypes.STRING(1234),
         allowNull: false
     },
     price: {
