@@ -13,14 +13,12 @@ app.use(routes)
 app.use(cors());
 app.use((req, res, next) => {
     res.setHeader("Access-Control-Allow-Origin", "*");
-    res.setHeader("Access-Control-Allow-Methods", "GET");
     res.header(
         "Access-Control-Allow-Headers",
         "Origin, X-Requested-With, Content-Type, Accept"
     );
     next();
 });
-
 
 sequelize.sync({ force: false }).then(function () {
     app.listen(PORT, function () {
