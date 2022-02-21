@@ -4,7 +4,6 @@
 A simple API built with a Node.js/Express.js server and MySQL database that is used to manage my concerts!
 
 ## Table of Contents
-- [Dimiter's Concert API ![License](https://opensource.org/licenses/Apache-2.0)](#dimiters-concert-api-)
   - [Description](#description)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
