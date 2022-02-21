@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(express.static('public'));
 app.use(routes)
 
-sequelize.sync({ force: true }).then(function () {
+sequelize.sync({ force: false }).then(function () {
     app.listen(PORT, function () {
         console.log('Listening at' + PORT);
     })
