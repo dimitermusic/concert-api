@@ -3,7 +3,9 @@ const router = express.Router();
 const Concert = require("../../models/Concert");
 
 router.get("/", (req, res) => {
-  Concert.findAll()
+  Concert.findAll({
+    sort: Concert.date
+  })
     .then(concertData => {
       res.json(concertData);
     })
