@@ -18,8 +18,7 @@ Concert.init({
     },
     date: {
         type: DataTypes.STRING(1234),
-        allowNull: false,
-        primaryKey: true
+        allowNull: false
     },
     ticketLink: {
         type: DataTypes.STRING(1234),
