@@ -5,7 +5,7 @@ const apiRoutes = require("./api");
 router.use("/api", apiRoutes);
 
 router.get("*", (req, res) => {
-    res.send(`Visit <a href="https://dimiter-concert-api.herokuapp.com/api/concerts">https://dimiter-concert-api.herokuapp.com/api/concerts</a> to view Dimiter's concert API.`)
+    res.send(`Visit <a href="https://dimiter-concert-api.wl.r.appspot.com/api/concerts">https://dimiter-concert-api.wl.r.appspot.com/api/concerts</a> to view Dimiter's concert API.`)
 })
 
 module.exports = router;
