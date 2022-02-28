@@ -14,7 +14,7 @@ A simple API built with a Node.js/Express.js server and MySQL database that is u
   - [Questions](#questions)
 
 ## Installation
-Visit the deployed API [here](https://dimiter-concert-api.herokuapp.com)
+Visit the deployed API [here](https://concert-api-5i4uylvzdq-wl.a.run.app/)
 
 ## Usage
 add `/api/concerts/` to url to view concerts.
