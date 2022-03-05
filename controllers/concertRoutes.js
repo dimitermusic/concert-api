@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Concert = require("../../models/Concert");
+const Concert = require("../models/Concert");
 
 router.get("/", (req, res) => {
   Concert.findAll()
