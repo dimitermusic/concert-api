@@ -28,4 +28,4 @@ There are no tests at this time.
 If you have any questions, please visit my GitHub profile or email me using the links below:
 
 [Github Profile](https://github.com/dimitermusic)  
-[Email Me!](mailto:dimitermusic@gmail.com)
+[Email Me](mailto:dimitermusic@gmail.com)
