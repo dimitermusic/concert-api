@@ -1,7 +1,8 @@
 # Dimiter's Concert API [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Description
-A simple API built with a Node.js/Express.js server and MySQL database that is used to manage my concerts!
+A simple REST API built with a Node.js/Express.js server and SQL database that is used
+to manage my concerts and display them to my website.
 
 ## Table of Contents
   - [Description](#description)
@@ -9,7 +10,6 @@ A simple API built with a Node.js/Express.js server and MySQL database that is u
   - [Usage](#usage)
   - [Contributing](#contributing)
   - [License](#license)
-  - [Testing Instructions](#testing-instructions)
   - [Questions](#questions)
 
 ## Usage
@@ -20,9 +20,6 @@ Feedback always welcome!
 
 ## License
 This application is covered under the Apache 2.0 License
-
-## Testing Instructions
-There are no tests at this time.
 
 ## Questions
 If you have any questions, please visit my GitHub profile or email me using the links below:
