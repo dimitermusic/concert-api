@@ -6,18 +6,14 @@ A simple API built with a Node.js/Express.js server and MySQL database that is u
 ## Table of Contents
   - [Description](#description)
   - [Table of Contents](#table-of-contents)
-  - [Installation](#installation)
   - [Usage](#usage)
   - [Contributing](#contributing)
   - [License](#license)
   - [Testing Instructions](#testing-instructions)
   - [Questions](#questions)
 
-## Installation
-Visit the deployed API [here](https://concert-api-5i4uylvzdq-wl.a.run.app/)
-
 ## Usage
-add `/api/concerts/` to url to view concerts.
+Visit the deployed API [here](https://api.dimitermusic.com/)
 
 ## Contributing
 Feedback always welcome!
@@ -31,5 +27,5 @@ There are no tests at this time.
 ## Questions
 If you have any questions, please visit my GitHub profile or email me using the links below:
 
-[Github](https://github.com/dimitermusic)  
-[Email](mailto:dimitermusic@gmail.com)
+[Github Profile](https://github.com/dimitermusic)  
+[Email Me!](mailto:dimitermusic@gmail.com)
