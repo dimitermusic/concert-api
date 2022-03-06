@@ -10,11 +10,11 @@ html {
 }
 
 body {
-  height: 100%;
-  width: 100%;
   margin: 0;
+  height: 100%;
   padding: 3rem 0.5rem;
-  background-color: rgb(46, 42, 52);
+  background-image: linear-gradient(rgb(55, 52, 61)30%, rgb(46, 42, 52)70%);
+  background-size: 100%;
   padding-bottom: 5rem;
 }
 
@@ -32,7 +32,12 @@ main {
 }
 
 footer {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: flex-end;
   height: 10%;
+  padding: 1rem;
 }
 
 a {
@@ -76,10 +81,11 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: 2rem;
   color: white;
   text-align: center;
   border-bottom: solid 1px #ddd;
+  width: 50%;
 }
 
 .btn {
@@ -108,7 +114,6 @@ h1 {
   text-align: center;
   color: #fff;
   font-size: x-small;
-  margin: 2em;
 }
 
 .github-link {
@@ -120,4 +125,12 @@ h1 {
 .github-link:hover {
   color: #ddd;
   border-bottom: solid 1px #ddd;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .card {
+    width: 100%;
+  }
+
 }
