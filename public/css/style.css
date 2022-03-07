@@ -22,7 +22,7 @@ body {
 
 nav {
   padding: 2rem .5rem;
-  height: 20vh;
+  /* height: 20vh; */
 }
 
 main {
@@ -35,7 +35,7 @@ main {
 }
 
 footer {
-  height: 20vh;
+  /* height: 20vh; */
   padding: 1rem;
   display: flex;
   flex-direction: column;
