@@ -21,7 +21,7 @@ nav {
   top: 0;
   width: 100%;
   padding: 3rem 0;
-  background-color: rgb(16, 16, 16);
+  background-color: #212121;
   box-shadow: 0 6px 8px -1px rgb(0, 0, 0, .13);
 }
 
@@ -40,7 +40,7 @@ footer {
   bottom: 0;
   width: 100%;
   padding: 1rem 1rem 0;
-  background-color: rgb(16, 16, 16);
+  background-color: #212121;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,7 +94,7 @@ h4 {
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  color: rgb(16, 16, 16);
+  color: #212121;
   text-align: center;
   width: 30%;
 }
@@ -135,7 +135,7 @@ h4 {
   transition: all .5s;
   z-index: -1;
   transform: translateY(60px);
-  left: -147px;
+  left: -47px;
 }
 
 .btn:hover {
@@ -145,9 +145,9 @@ h4 {
 
 .btn:hover:before {
   transform: translateY(-120px);
-  width: 600px;
-  height: 600px;
-  border-radius: 600px;
+  width: 470px;
+  height: 470px;
+  border-radius: 470px;
 }
 
 #copyright-text {
