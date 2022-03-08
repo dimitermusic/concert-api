@@ -15,18 +15,19 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   margin: 0;
-  padding: 2rem 2 rem 0;
+  padding: 0;
   background-color: #2E2A34;
-  padding: 1rem;
 }
 
 nav {
   padding: 2rem .5rem;
+  background-color: black;
+  box-shadow: 0 6px 8px -1px rgb(0 0 0 / 13%);
 }
 
 main {
   height: 100%;
-  margin: 0 2rem 2rem 2rem;
+  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,6 +36,7 @@ main {
 
 footer {
   padding: 1rem 1rem 0;
+  background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,14 +58,14 @@ a {
 
 .bottom-icon {
   margin: 1rem;
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-size: calc(22px + (24 - 17) * ((100vw - 300px) / (1600 - 300)));
   text-align: center;
   text-decoration: none;
 }
 
 .nav-icons a:hover .bottom-icon {
-  color: #ddd;
+  color: #49b6dd;
   transition: all .2s ease-out;
 }
 
@@ -77,27 +79,36 @@ h1 {
   text-align: center;
 }
 
+h4 {
+  font-size: larger;
+}
+
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  color: white;
+  color: black;
   text-align: center;
-  border-bottom: solid 1px #ddd;
-  width: 40%;
+  width: 30%;
 }
 
 .btn {
-  margin: 1rem;
-  padding: 1rem;
-  background: none;
-  border: solid 2px white;
-  border-radius: 0 !important;
-  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: 20px;
+  padding: 2rem;
+  border-radius: 200px !important;
+  background: rgb(255, 255, 255);
+  color: black;
+  border: solid 2px black;
   font: inherit;
-  font-size: small;
+  font-size: large;
   font-weight: 900;
   letter-spacing: .1875rem;
   cursor: pointer;
@@ -106,26 +117,34 @@ h1 {
   -webkit-appearance: none !important;
 }
 
+.btn::after {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: purple;
+}
+
 .btn:hover {
-  background-color: #fff;
-  color: #2E2A34;
+  background: #49b6dd;
+  border: solid 2px #49b6dd;
+  color: rgb(255, 255, 255);
 }
 
 #copyright-text {
   text-align: center;
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-size: x-small;
 }
 
 .github-link {
-  color: #fff;
+  color: rgb(255, 255, 255);
   transition: all .2s ease-in;
   border-bottom: solid 1px rgba(221, 221, 221, 0);
 }
 
 .github-link:hover {
-  color: #ddd;
-  border-bottom: solid 1px #ddd;
+  color: white;
+  border-bottom: solid 1px white;
 }
 
 @media only screen and (max-width: 768px) {
