@@ -135,7 +135,7 @@ h4 {
   transition: all .5s;
   z-index: -1;
   transform: translateY(60px);
-  left: -47px;
+  left: -147px;
 }
 
 .btn:hover {
@@ -145,9 +145,9 @@ h4 {
 
 .btn:hover:before {
   transform: translateY(-120px);
-  width: 470px;
-  height: 470px;
-  border-radius: 470px;
+  width: 600px;
+  height: 600px;
+  border-radius: 600px;
 }
 
 #copyright-text {
