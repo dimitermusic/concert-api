@@ -16,6 +16,7 @@ body {
 }
 
 nav {
+  height: 25%;
   position: relative;
   top: 0;
   width: 100%;
@@ -25,6 +26,8 @@ nav {
 }
 
 main {
+  min-height: 65%;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,7 +35,8 @@ main {
 }
 
 footer {
-  position: absolute;
+  height: 10%;
+  position: relative;
   bottom: 0;
   width: 100%;
   padding: 1rem 1rem 0;
@@ -142,6 +146,14 @@ h4 {
 }
 
 @media only screen and (max-width: 768px) {
+
+  nav {
+    height: 20%;
+  }
+
+  main {
+    min-height: 70%;
+  }
 
   nav h1 {
     font-size: 33px;
