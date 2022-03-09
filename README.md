@@ -13,15 +13,29 @@ to manage my concerts and display them to my website.
   - [Questions](#questions)
 
 ## Usage
-Visit the deployed API [here](https://api.dimitermusic.com/)
+
+Visit the deployed API [here](https://api.dimitermusic.com/)  
+
+Home Page:  
+![Home Page](./public/images/ss1.png)  
+![Button](./public/images/ss2.png)  
+
+JSON view of API:  
+![API](./public/images/ss3.png)  
+
+Fetched and displayed to official website:   
+![Official Website](./public/images/ss4.png)  
 
 ## Contributing
+
 Feedback always welcome!
 
 ## License
+
 This application is covered under the Apache 2.0 License
 
 ## Questions
+
 If you have any questions, please visit my GitHub profile or email me using the links below:
 
 [Github Profile](https://github.com/dimitermusic)  
