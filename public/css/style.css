@@ -155,12 +155,12 @@ h4 {
 
 .btn:hover:before {
   transform: translateY(-120px);
-  width: 500px;
-  height: 500px;
-  border-radius: 500px;
-  -ms-border-radius: 500px;
-  -webkit-border-radius: 500px;
-  -moz-border-radius: 500px;
+  width: 600px;
+  height: 600px;
+  border-radius: 600px;
+  -ms-border-radius: 600px;
+  -webkit-border-radius: 600px;
+  -moz-border-radius: 600px;
   opacity: 1;
 }
 
