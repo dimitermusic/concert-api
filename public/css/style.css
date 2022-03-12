@@ -5,10 +5,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  text-decoration: none;
-}
-
 body {
   height: 100vh;
   margin: 0;
@@ -82,6 +78,10 @@ h4 {
   color: white;
   font-size: calc(22px + (24 - 17) * ((100vw - 300px) / (1600 - 300)));
   text-align: center;
+  text-decoration: none;
+}
+
+a {
   text-decoration: none;
 }
 
@@ -168,13 +168,13 @@ h4 {
   font-size: x-small;
 }
 
-#github-link {
+#copyright-text a {
   color: white !important;
   transition: all .2s ease-in !important;
   border-bottom: solid 1px white !important;
 }
 
-#github-link:hover {
+#copyright-text a:hover {
   color: #ddd !important;
   border-bottom: solid 1px #ddd !important;
 }
