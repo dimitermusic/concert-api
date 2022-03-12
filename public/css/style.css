@@ -26,7 +26,7 @@ nav {
   justify-content: center;
   width: 100%;
   padding: 3rem 0;
-  background-color: #212121;
+  background-color: black;
   box-shadow: 0 6px 8px -1px rgb(0, 0, 0, .13);
   z-index: 4;
 }
@@ -48,8 +48,8 @@ footer {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 1rem 1rem 0;
-  background-color: #212121;
+  padding: 3rem 1rem;
+  background-color: black;
   z-index: 3;
 }
 
@@ -96,7 +96,7 @@ h4 {
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  color: #212121;
+  color: black;
   text-align: center;
 }
 
