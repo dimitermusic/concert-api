@@ -169,14 +169,14 @@ h4 {
 }
 
 #github-link {
-  color: white;
-  transition: all .2s ease-in;
-  border-bottom: solid 1px white;
+  color: white !important;
+  transition: all .2s ease-in !important;
+  border-bottom: solid 1px white !important;
 }
 
 #github-link:hover {
-  color: #ddd;
-  border-bottom: solid 1px #ddd;
+  color: #ddd !important;
+  border-bottom: solid 1px #ddd !important;
 }
 
 @media only screen and (max-width: 768px) {
