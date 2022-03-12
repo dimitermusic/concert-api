@@ -168,13 +168,13 @@ h4 {
   font-size: x-small;
 }
 
-.github-link {
+#github-link {
   color: white;
   transition: all .2s ease-in;
   border-bottom: solid 1px white;
 }
 
-.github-link:hover {
+#github-link:hover {
   color: #ddd;
   border-bottom: solid 1px #ddd;
 }
