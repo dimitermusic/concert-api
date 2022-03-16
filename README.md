@@ -18,13 +18,12 @@ Visit the deployed API [here](https://api.dimitermusic.com/)
 
 Home Page:  
 ![Home Page](./public/images/ss1.png)  
-![Button](./public/images/ss2.png)  
 
 JSON view of API:  
-![API](./public/images/ss3.png)  
+![API](./public/images/ss2.png)  
 
 Fetched and displayed to official website:   
-![Official Website](./public/images/ss4.png)  
+![Official Website](./public/images/ss3.png)  
 
 ## Contributing
 
