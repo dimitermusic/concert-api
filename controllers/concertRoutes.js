@@ -4,10 +4,10 @@ const Concert = require("../models/Concert");
 
 router.get("/", (req, res) => {
   Concert.findAll()
-    .then(concertData => {
+    .then((concertData) => {
       res.json(concertData);
     })
-    .catch(err => {
+    .catch((err) => {
       console.log(err);
       res.status(500).json({ err });
     });
@@ -16,19 +16,20 @@ router.get("/", (req, res) => {
 router.get("/:id", (req, res) => {
   Concert.findOne({
     where: {
-      id: req.params.id
-    }
+      id: req.params.id,
+    },
   })
-    .then(concertData => {
+    .then((concertData) => {
       if (concertData) {
         res.json(concertData);
       } else {
         res.status(404).json({ err: "no such concert found!" });
       }
-    }).catch(err => {
-      console.log(err);
     })
-})
+    .catch((err) => {
+      console.log(err);
+    });
+});
 
 router.post("/", (req, res) => {
   Concert.create({
@@ -38,11 +39,12 @@ router.post("/", (req, res) => {
     date: req.body.date,
     time: req.body.time,
     ticketLink: req.body.ticketLink,
-    bandsInTownLink: req.body.bandsInTownLink
-  }).then(newConcert => {
-    res.json(newConcert);
+    bandsInTownLink: req.body.bandsInTownLink,
   })
-    .catch(err => {
+    .then((newConcert) => {
+      res.json(newConcert);
+    })
+    .catch((err) => {
       console.log(err);
       res.status(500).json({ err });
     });
@@ -57,21 +59,22 @@ router.put("/:id", (req, res) => {
       date: req.body.date,
       time: req.body.time,
       ticketLink: req.body.ticketLink,
-      bandsInTownLink: req.body.bandsInTownLink
+      bandsInTownLink: req.body.bandsInTownLink,
     },
     {
       where: {
-        id: req.params.id
-      }
-    })
-    .then(updatedConcert => {
+        id: req.params.id,
+      },
+    }
+  )
+    .then((updatedConcert) => {
       if (updatedConcert) {
         res.json(updatedConcert);
       } else {
         res.status(404).json({ err: "no such concert found!" });
       }
     })
-    .catch(err => {
+    .catch((err) => {
       console.log(err);
       res.status(500).json({ err: err });
     });
@@ -80,17 +83,17 @@ router.put("/:id", (req, res) => {
 router.delete("/:id", (req, res) => {
   Concert.destroy({
     where: {
-      id: req.params.id
-    }
+      id: req.params.id,
+    },
   })
-    .then(deletedConcert => {
+    .then((deletedConcert) => {
       if (deletedConcert) {
         res.json(deletedConcert);
       } else {
         res.status(404).json({ err: "no such concert found!" });
       }
     })
-    .catch(err => {
+    .catch((err) => {
       console.log(err);
       res.status(500).json({ err });
     });
