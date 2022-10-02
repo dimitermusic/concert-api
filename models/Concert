@@ -24,7 +24,7 @@ Concert.init({
         type: DataTypes.STRING(1234),
         allowNull: true
     },
-    bandsInTownLink: {
+    infoLink: {
         type: DataTypes.STRING(1234),
         allowNull: true
     }
