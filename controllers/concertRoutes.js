@@ -39,7 +39,7 @@ router.post("/", (req, res) => {
     date: req.body.date,
     time: req.body.time,
     ticketLink: req.body.ticketLink,
-    infoLink: req.body.bandsInTownLink,
+    infoLink: req.body.infoLink,
   })
     .then((newConcert) => {
       res.json(newConcert);
@@ -59,7 +59,7 @@ router.put("/:id", (req, res) => {
       date: req.body.date,
       time: req.body.time,
       ticketLink: req.body.ticketLink,
-      infoLink: req.body.bandsInTownLink,
+      infoLink: req.body.infoLink,
     },
     {
       where: {
