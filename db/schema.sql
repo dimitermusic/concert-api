@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS concert_db;
+DROP DATABASE IF EXISTS dimitermusicv1;
 
-CREATE DATABASE concert_db;
+CREATE DATABASE dimitermusicv1;
